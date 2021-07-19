@@ -1,0 +1,36 @@
+
+//background color
+
+$bg-color-hover : #f5edff ;
+$bg-color-position: #eaeaea;
+$bg-color-secondary : #f6f6f6;
+$bg-color-primary : #2a9b3f;
+$bg-color-loader : #FF79DA ;
+//box shadow
+
+$box-shadow-header: inset 0px 4px 3px 0px darken($bg-color-position,10% ) ;
+$box-shadow-btn : 0px 4px 3px 0px darken($bg-color-position,10% ) ;
+$box-shadow-btn-hover : 0px 4px 3px 0px darken($bg-color-position,20%);
+
+//gradient 
+
+$color-gradient-start : rgba(147,86,220,1) ;
+$color-gradient-end : rgba(203,86,220,1) ;
+$btn-gradient: linear-gradient(0deg, $color-gradient-start, $color-gradient-end);
+$btn-gradient-hover: linear-gradient(0deg, lighten($color-gradient-start,4%), lighten($color-gradient-end, 4%));
+
+//font
+
+$font-color :#000000;
+$font-color-secondary: #FFFFFF;
+$bold : bold;
+
+//loader
+
+$duree-loader : 2s;
+
+// autres
+
+$logo : 80%;
+$element : 50%;
+$no-margin:0;

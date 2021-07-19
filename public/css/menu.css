@@ -1,0 +1,205 @@
+@charset "UTF-8";
+.liste-menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.liste-menu__entrée {
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .liste-menu img {
+    height: 35em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.menu {
+  margin-top: -45px;
+  border: none;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 30px 0 50px 0;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.menu__section {
+  margin-left: 20px;
+}
+
+@media (min-width: 1440px) {
+  .menu__section {
+    width: 31%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__section {
+    width: 80%;
+  }
+}
+
+.menu .carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 1em;
+  border-style: none;
+  -webkit-box-shadow: 0px 0px 11px 2px #c3c3c3;
+          box-shadow: 0px 0px 11px 2px #c3c3c3;
+}
+
+.menu .carte figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 13px 10px 13px 10px;
+  width: 95%;
+}
+
+.menu .carte figcaption h4, .menu .carte figcaption p {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu .carte figcaption h4 {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.menu .carte figcaption p {
+  font-size: 15px;
+  width: 90%;
+}
+
+.menu .carte figcaption p:last-child {
+  width: 10%;
+  font-weight: bold;
+}
+
+.menu .nom-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .nom-restaurant h2 {
+  font-family: "shrikhand";
+}
+
+@media (min-width: 768px) {
+  .menu .nom-restaurant {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px), (min-width: 768px) and (min-width: 1440px) {
+  .menu .nom-restaurant h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menu__entree {
+  opacity: 1;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: apparition-menu 1.7s ease-in-out;
+          animation: apparition-menu 1.7s ease-in-out;
+}
+
+.menu__plat {
+  opacity: 1;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: apparition-menu 1.5s ease-in-out;
+          animation: apparition-menu 1.5s ease-in-out;
+}
+
+.menu__dessert {
+  opacity: 1;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: apparition-menu 1s ease-in-out;
+          animation: apparition-menu 1s ease-in-out;
+}
+
+@-webkit-keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  33% {
+    opacity: 0.2;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  33% {
+    opacity: 0.2;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}

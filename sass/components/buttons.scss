@@ -1,0 +1,56 @@
+@import "../utils/variables";
+//boutons
+
+.btn {
+    border-radius: 10em;
+    padding: 12px 5% 12px 5%;
+    background: $btn-gradient ;
+    box-shadow: $box-shadow-btn;
+    &:hover {
+        background: $btn-gradient-hover;
+        box-shadow: $box-shadow-btn-hover;
+    }
+    a {
+        color: white;
+    }
+}
+
+
+//icone coeur
+
+.fav {
+    font-size: 25px;
+    width: 15%;
+}
+
+.fav i {
+    &:hover {
+        opacity: 1;
+        animation: heart-fill 1s ease-in-out 1ms ;
+        font-weight: bold;
+    }
+}
+
+@keyframes heart-fill {
+    0% {
+        color: lighten($color: #9356dc, $amount: 20%);
+        opacity: 0.2;
+    }
+    25%{
+        color:lighten($color: #9356dc, $amount: 15%);
+        opacity: 0.4;
+    }
+    50% {
+        color:lighten($color: #9356dc, $amount: 7%);
+        opacity: 0.6;
+    }
+    75% {
+        color:lighten($color: #9356dc, $amount: 4%);
+        opacity: 0.8; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

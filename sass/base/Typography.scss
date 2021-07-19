@@ -1,0 +1,64 @@
+@import "../utils/variables";
+
+body {
+    font-family: 'Roboto';
+    color: $font-color;
+    .logo h1 {
+        font-family: "Shrikhand";
+        margin: 0 0 10px 0;
+        font-size: 27px;
+    }
+    .menu {
+        h2 {
+            font-family: "shrikhand";
+            -webkit-text-stroke:unset;
+        }
+        h3 {
+            border-bottom: solid;
+            border-color: #99E2D0;
+            width: 15%;
+            text-transform: uppercase;
+            @media (min-width: 1440px) {
+                width: 4%;
+            }
+            @media (min-width: 768px) and (max-width: 1440px) {
+                width: 9%;
+            }
+        }
+    }
+}
+
+h2,p,h3,h4 {
+    margin: 0;
+    -webkit-text-stroke: 1px;
+}
+
+h3 {
+    font-size: 20px;
+    margin:30px 0 10px 0;
+    width: 90%;
+}
+
+input {
+    @media (min-width: 768px) {
+        font-size: 17px;
+    }
+}
+
+.reservation__btn {
+    p {
+        -webkit-text-stroke: 0.5px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $font-color;
+    p {
+        color: white;
+    }
+    &:visited {
+        color: $font-color;
+    }
+}
+

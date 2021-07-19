@@ -1,0 +1,83 @@
+.checkbox {
+  width: 17%;
+  background-color: #99E2D0;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  display: none;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+}
+
+.checkbox i {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  -webkit-animation: rotate 700ms ease-in-out;
+          animation: rotate 700ms ease-in-out;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.menu .carte:hover .checkbox {
+  display: unset;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-animation: checkbox 600ms ease-in;
+          animation: checkbox 600ms ease-in;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    font-size: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    font-size: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes checkbox {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 17%;
+  }
+}
+
+@keyframes checkbox {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 17%;
+  }
+}

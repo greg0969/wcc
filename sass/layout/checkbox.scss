@@ -1,0 +1,55 @@
+@import "../utils/variables";
+
+.checkbox {
+    width: 17%;
+    background-color: #99E2D0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: none;
+    transform-origin: right ;
+    i {
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        animation: rotate 700ms ease-in-out;
+        transform-origin: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+}
+
+.menu {
+    .carte:hover {
+        .checkbox {
+            display: unset;
+            transform: scaleX(1);
+            animation: checkbox 600ms ease-in ;
+        }
+    }
+}
+
+
+
+@keyframes rotate {
+    0% {
+        font-size: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes checkbox {
+    0% {
+        opacity: 0;
+        //transform: scaleX(0%);
+        width: 0%;
+    }
+    100% {
+        opacity: 1;
+        //transform:  scaleX(17%);
+        width: 17%;
+    }
+}
