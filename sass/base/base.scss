@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
 .bloc {
     display: flex;
     justify-content: center;
