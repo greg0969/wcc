@@ -1,0 +1,54 @@
+{
+    "campingcars": [
+      {
+        "image": "594ec62af0cfbd7fae882fec9e0282e1a53781bb.jpg",
+        "name": "Integral carthago c tourer i 150",
+        "localisation": "Les Achards",
+        "annee": 2015,
+        "kilometrage": 28000,
+        "price": 64000,
+        "tags" : ""
+      },
+      {
+        "image": "db2ec5401f98583480784de3350dfd7ad06ae6ac.jpg",
+        "name": "Profile challenger mageo 378 xlb",
+        "localisation": "Les Achards",
+        "annee": 2018,
+        "kilometrage": 6700,
+        "price": 58900,
+        "tags" : ""
+      },
+      {
+        "image": 243,
+        "name": "Mimi Keel",
+        "localisation": "London",
+        "annee": "UK",
+        "kilometrage": ["portrait", "events", "travel", "animals"],
+        "price": 400,
+        "tags" : ""
+      },
+      {
+        "image": 243,
+        "name": "Mimi Keel",
+        "localisation": "London",
+        "annee": "UK",
+        "kilometrage": ["portrait", "events", "travel", "animals"],
+        "price": 400,
+        "tags" : ""
+      }
+    ],
+    "fichetechnique" : [
+      {
+        "name":"Integral carthago c tourer i 150",
+        "image": "" ,
+        "criteres":"",
+        "description":""
+      },
+      {
+        "name":"Profile challenger mageo 378 xlb",
+        "image": "" ,
+        "criteres":"",
+        "description":""
+      }
+    ]
+  }

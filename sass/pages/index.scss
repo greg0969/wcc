@@ -1,113 +1,86 @@
-@import "../utils/mixins";
-
-//bloc principal
-.index {
-    animation : loading-page 1.7s ease-out 0s ;
-        
-}
-
-//section position
-
-.position {
-    flex-direction: row;
-    background-color: $bg-color-position;
-    box-shadow: $box-shadow-header;
-    padding: 2em;
+  /* MAIN */
+  .main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    row-gap: 3.5rem;
+    justify-content: space-between;
+    margin: auto 7% 4rem 7%;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 16.3rem 3.56rem 1.87rem;
+    &__img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 6px 6px 8px -6px rgba(0, 0, 0, 0.35);
+      }
+      h2 {
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+    &__content {
+      text-align: center;
+      padding-top: 0.5rem;
+      &__tagline {
+        margin-bottom: 3px;
+      }
+      &__price {
+        font-size: 18px;
+      }
+      div {
+        &__tag {
+          display: flex;
+          justify-content: center;
+          border: solid 0.5px #c4c4c4;
+          border-radius: 11px;
+          margin: auto 5px;
+          padding: 3px 5px;
+        }
+      }
+    }
+  }
+  
+  .bground {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
     width: 100%;
-        p {
-            margin: $no-margin;
-            .fa-map-marker-alt {
-               width: 10px; 
-            }
-        }
-    &__emplacement {
-        font-weight: $bold;
-        input {
-            border: none;
-            background-color: $bg-color-position;
-            margin: 20px 0 20px 0;
-        }
-    }
-}
-
-// liste des offres
-
-.offres {
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $bg-color-secondary;
-    padding: 50px 0 40px 0;
-    &--position-titre {
-        margin:0 0 20px 20px;
-    }
-    &__carte {
-        display: flex;
-    }
-    &__carte figure {
-        background-color: white;
-        box-shadow: 1px 1px 10px 2px #c3c3c3;
-        border-radius: 20px;
-        margin: 10px 20px 4% 20px;
-    }
-        .notif-nouveau {
-            border-style: none;
-            background-color: $bg-color-primary;
-            width: 20%;
-            z-index: 1;
-            position: absolute;
-            padding: 4px;
-            right: 35px;
-            margin-top: 10px;
-            border-radius: 4px;
-            &--1 {
-                 width: 10%;
-                }            
-            p {
-                font-size: 15px;
-                text-align: center;
-                color: #008766;
-            }
-        } 
-        img {
-            width: 100%;
-            object-fit: cover;
-            border-top-right-radius:20px ;
-            border-top-left-radius: 20px;
-        }
-        figure .fav {
-            width: 10%;
-        }
-        figcaption {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 0 10px 0 15px;
-            h3 {
-                margin-top: 10px;
-            }
-            .heart {
-                width: 10%;
-            }
-            p {
-                -webkit-text-stroke: 0.4px;
-                color: black;
-                &:last-child {
-                    width: 80%;
-                    margin-bottom: 15px;
-                }
-            }
-
-        }
-    }
-
-// permet de décaler la page entière pendant la durée du load spinner
-
-@keyframes loading-page {
-    0% {
-        transform: translateX(-99999px) ; 
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
+    overflow: auto;
+    background-color: rgba(26, 39, 156, 0.4);
+  }
+  
+  .content {
+    margin: 5% auto;
+    width: 100%;
+    max-width: 500px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+    background: #232323;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding-top: 10px;
+  }
+  
+  .modal-body {
+    padding: 15px 8%;
+    margin: 15px auto;
+  }
+  

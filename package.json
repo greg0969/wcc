@@ -1,5 +1,5 @@
 {
-  "name": "west-camping-car",
+  "name": "p6",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "https://github.com/greg0969/thuegregory_6_01092021"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/greg0969/thuegregory_6_01092021/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/greg0969/thuegregory_6_01092021#readme"
 }
 
