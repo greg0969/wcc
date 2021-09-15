@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>West Camping Car</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="public/images/logo/wcc.png" alt="Logo west camping car" />
+      </a>
+    </header>
+    <main>
+          <div class="content">
+            <span class="close"></span>
+            <div class="modal-body">
+              <form
+                name="reserve"
+                action="index.html"
+                method="get"
+              >
+                <div
+                  class="formData">
+                  <label for="first">Prénom</label><br>
+                  <input
+                    class="text-control"
+                    type="text"
+                    id="first"
+                    name="first"
+                    minlength="2"                                  
+                  /><br>
+                  
+                  
+                </div>
+                <div
+                  class="formData">
+                  <label for="last">Nom</label><br>
+                  <input
+                    class="text-control"
+                    type="text"
+                    id="last"
+                    name="last"
+                                        
+                  /><br>
+                 
+                </div>
+                <div
+                  class="formData">
+                  <label for="email">E-mail</label><br>
+                  <input
+                    class="text-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                    
+                  /><br>
+                  
+                </div>
+                <div
+                  class="formData" 
+                  >
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="checkbox1"
+                    checked
+                  
+                  />
+                  <label class="checkbox2-label" for="checkbox1" >
+                    <span class="checkbox-icon"></span>
+                    J'ai lu et accepté les conditions d'utilisation.
+                  </label>
+                  <br>
+                  <input class="checkbox-input" type="checkbox" id="checkbox2" />
+                  <label class="checkbox2-label" for="checkbox2">
+                    <span class="checkbox-icon"></span>
+                     Je souhaite être prévenu des prochains évènements.
+                  </label>
+                  <br>
+                </div>
+                <input
+                  class="btn-submit button"
+                  type="submit"
+                  value="C'est parti"
+                  id="submit-btn"
+                />
+              </form>
+            </div>
+        </div> 
+    </main>
+    <script src="js/fichetechnique.js"></script>
+    <script src="js/ficheTech.js"></script>
+
+  </body>
+</html>

@@ -17,6 +17,7 @@ createhtml() {
             </p>
             <p class="ficheTechnique__description">${this.description}</p>
         </div>
+        <button class="acheter" role="acheter">Je suis intéressé</button>
 	`
 	}
 }

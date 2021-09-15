@@ -47,6 +47,11 @@ a {
   cursor: pointer;
 }
 
+.main-fichetechnique button {
+  width: 20%;
+  align-self: center;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -177,6 +182,11 @@ a {
 .main-fichetechnique {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+.main-fichetechnique img {
+  width: auto;
 }
 .main-fichetechnique p {
   font-size: 17px;
