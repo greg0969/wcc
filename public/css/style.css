@@ -192,3 +192,13 @@ a {
   font-size: 17px;
   font-weight: bold;
 }
+.main-fichetechnique .ficheTechnique {
+  margin-left: 3%;
+}
+.main-fichetechnique .ficheTechnique__description {
+  display: flex;
+  line-height: 20px;
+}
+.main-fichetechnique .ficheTechnique__description:nth-child(5), .main-fichetechnique .ficheTechnique__description:nth-child(6) {
+  width: 23%;
+}
