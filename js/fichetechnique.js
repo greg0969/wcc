@@ -1,35 +1,25 @@
 
-class Fichetechnique {
-	constructor(data) {
-		this.name = data.name;
-        this.image = data.image ;
-        this.criteres = data.criteres ;
-        this.description = data.description ;
+
+
+const displayFichetechnique = (ArrayOfCampingcar) => {
+	const mainFicheTechnique = document.querySelector(".main-fichetechnique");
+	ArrayOfCampingcar.forEach((fiche) => {
+		let fichetechniqueModel = new Fichetechnique(fiche)
+		mainFicheTechnique.innerHTML += fichetechniqueModel.createhtml()
+	});
+  };
+
+const getData = async () =>
+await fetch("./data.json")
+	.then((res) => res.json())
+	.catch((error) => console.log("erreur"))
+	
+
+const init = async() => {
+    const data = await getData();
+    displayFichetechnique(data.campingcars);
 }
-createhtml() {
-	return `
-	<div class="bground">
-        <div class="content">
-          <span class="close"></span>
-          <div class="modal-body">
-		  	<img src="" alt="">
-		  	<h2>Critères</h2>
-		  	<span>${this.criteres}</span>
-			<h2>Description</h2>
-			<span>${this.description}
-          </div>
-        </div>     
-    </div>
-	`
-	}
-}
-
-
-
-
-
-
-
+init();
 
 
 /*

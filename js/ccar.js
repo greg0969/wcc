@@ -10,7 +10,8 @@ class Campingcar {
     }
     createhtml() {
         return `
-        <figure class="card" onclick="displayFichetechnique()">
+        <a href="fichetechnique.html">
+        <figure class="card">
         <div class="card__img">
         <img src="public/images/campingcars/Miniatures/${this.image}" alt="">
           <h2>${this.name}</h2>
@@ -23,7 +24,7 @@ class Campingcar {
         </div>
         </figcaption>
         </figure>
-        
+        </a>
         `
     }
 }

@@ -3,16 +3,14 @@
 // Affiche les Camping Car 
 
 const displayCampingcar = (ArrayOfCampingcar) => {
-    const main = document.querySelector(".main");
+    const mainCampingCar = document.querySelector(".main");
     ArrayOfCampingcar.forEach((campingcar) => {
         let campingcarModel = new Campingcar(campingcar)
-        main.innerHTML += campingcarModel.createhtml()
+        mainCampingCar.innerHTML += campingcarModel.createhtml()
     });
 };
 
 // Affiche la fiche technique de chaque camping car
-
-
 
 
 // Filtre les camping car par tags
