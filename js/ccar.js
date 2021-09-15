@@ -12,7 +12,7 @@ class Campingcar {
         return `
         <figure class="card" onclick="displayFichetechnique()">
         <div class="card__img">
-        <img src="public/images/campingcars/miniatures/${this.image}" alt="">
+        <img src="public/images/campingcars/Miniatures/${this.image}" alt="">
           <h2>${this.name}</h2>
         </div>
         <figcaption class="card__content">
