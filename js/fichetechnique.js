@@ -17,7 +17,7 @@ await fetch("./data.json")
 
 const init = async() => {
     const data = await getData();
-    displayFichetechnique(data.campingcars);
+    displayFichetechnique(data.fichetechnique);
 }
 init();
 
